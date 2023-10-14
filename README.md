@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Project Learnings
 
-## Getting Started
+## Learnings
 
-First, run the development server:
+1. **Setting up a Next.js Project:**
+   To set up a Next.js project, follow the official [Next.js documentation](https://nextjs.org/docs/getting-started).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Basic Folder Structure:**
+   The basic folder structure typically includes folders such as `pages`, `components`, `styles`, `public`, etc. The `pages` folder is crucial for Next.js as it defines the routes for the application.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Setting up Routes and Routing:**
+   Routes in Next.js are defined based on the file structure within the `pages` directory. Each file in the `pages` directory corresponds to a route.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. **Dynamic Routes:**
+   Dynamic routes in Next.js allow you to create pages with variable paths. You can utilize the brackets `[]` to define dynamic segments in the URL.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+5. **Next Navigation Hook:**
+   The Next.js `useRouter` hook from `next/router` allows you to access the router object, enabling navigation within your application.
 
-## Learn More
+6. **Difference between Client and Server Component:**
+   - **Client Components:** Client components are traditional React components that are bundled and executed on the client-side. They're suitable for interactive and dynamic user interfaces.
+   - **Server Components:** Server components are rendered on the server-side, offering better performance and server-side rendering capabilities. They can fetch data asynchronously within the component itself.
 
-To learn more about Next.js, take a look at the following resources:
+7. **Fetching Data Asynchronously in Server Components:**
+   Server components in Next.js can fetch data asynchronously within the component itself using functions like `getServerSideProps` or `getStaticProps`. This helps in fetching data on the server and passing it to the component during server-side rendering.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Follow these steps to use the project and apply the learnings:
 
-## Deploy on Vercel
+1. Clone the repository: `git clone <repository_url>`
+2. Navigate to the project directory: `cd <project_directory>`
+3. Install dependencies: `npm install`
+4. Run the development server: `npm run dev`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to explore the code and experiment with the concepts mentioned in the learnings section.
